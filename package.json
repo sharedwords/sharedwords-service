@@ -1,0 +1,25 @@
+{
+  "name": "sharedwords-service",
+  "version": "1.0.0",
+  "description": "Back-end service for dictionary sharing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharedwords/sharedwords-service.git"
+  },
+  "keywords": [
+    "words",
+    "dictionary",
+    "share",
+    "community"
+  ],
+  "author": "Zsolt Farkas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharedwords/sharedwords-service/issues"
+  },
+  "homepage": "https://github.com/sharedwords/sharedwords-service#readme"
+}
