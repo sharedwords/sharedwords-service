@@ -1,2 +1,2 @@
 # sharedwords-service
-Just a play around project.
+Back-end service for words. Maybe it shoud be renamed to 'sharedwords-words-service' later.
