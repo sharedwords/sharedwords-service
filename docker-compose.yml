@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+  sharedwords_service:
+    # image: zsoltfarkas/sharedwords-service:latest
+    build: .
+    ports:
+     - "80:8080"
+     - "5858:5858"
+    depends_on: 
+     - sharedwords_db
+    links:
+     - sharedwords_db
+    restart: always
+    environment:
+      PROD: "false"
+  sharedwords_db:
+    image: mongo
+  sharedwords_admin:
+    image: mongo-express
+    depends_on:
+     - sharedwords_db
+    links:
+     - sharedwords_db
+    ports:
+     - "8081:8081" 
+    environment:
+        ME_CONFIG_MONGODB_SERVER: "sharedwords_db"
